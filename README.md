@@ -10,7 +10,12 @@ A simple Cloudflare Workers script to proxy images from GitHub private repositor
 1. Create a Cloudflare Worker 
 
     - Log in to your Cloudflare account and create a new Worker, name it `cf-github-image-proxy`
-    - Add an Environment Variable of type `Secret`, named `GITHUB_TOKEN`, the value is your GitHub PAT
+    - Choose "Import a repository" and then "Clone a public repository via Git URL"
+    - Paste in this repo's Git URL: 
+      ```
+      https://github.com/alteremail/cf-github-image-proxy.git
+      ```
+    - Add an Environment Variable of Type `Secret`, name it `GITHUB_TOKEN` and set its Value to your GitHub PAT
 1. Deploy the Worker
 1. Set up a custom domain for your Worker (optional)
 
