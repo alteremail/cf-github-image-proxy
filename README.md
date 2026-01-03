@@ -2,6 +2,8 @@
 
 A simple Cloudflare Workers script to proxy images from GitHub private repositories.
 
+This makes it easy to publicly expose images from a private repository and reference them as you would from a CDN.
+
 ## Getting Started
 
 1. Create a GitHub Personal Access Token (PAT).
